@@ -5,7 +5,7 @@ locals {
   # partition  = data.aws_partition.current.partition
 
   tags = merge({
-    ClusterName    = local.cluster_name
+    ClusterName = local.cluster_name
   }, var.tags)
 }
 
